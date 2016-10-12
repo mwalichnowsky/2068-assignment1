@@ -1,3 +1,10 @@
+/* 
+    File name: app.js
+    Author: Matthew Walichnowsky
+    Website name: walichnowsky.com
+    File description: This page contains my main app information.
+*/
+
 // Modules.
 var express = require('express');
 var path = require('path');
@@ -5,6 +12,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+// var nodemailer = require('nodemailer');
+
+// // Email
+// var transporter = nodemailer.createTransport(transport[, defaults])
 
 // Page variables.
 var routes = require('./routes/index');
@@ -22,13 +33,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs'); 
 
 // Load favicon for my portfolio.
-/* 
-    File name: app.js
-    Author: Matthew Walichnowsky
-    Website name: walichnowsky.com
-    File description: This page contains my main app information.
-*/
-
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 // 
@@ -47,7 +51,10 @@ app.use('/experience', experience);
 app.use('/contact', contact);
 
 // Image linking.
-app.use('/' "public" ) );
+//app.use('/', public);
+
+// Contact form use.
+// app.get('/contact', routes.contact);
 
 // Google recapcha.
 app.get
@@ -87,6 +94,36 @@ app.post
         );
     }
 );
+
+// Gmail email sender.
+// app.post('/contact', function (req, res) {
+//   var mailOpts, smtpTrans;
+//   //Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
+//   smtpTrans = nodemailer.createTransport('SMTP', {
+//       service: 'Gmail',
+//       auth: {
+//           user: "mwalichnowsky@gmail.com",
+//           pass: "password-here" 
+//       }
+//   });
+//   //Mail options
+//   mailOpts = {
+//       from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from the request body object
+//       to: 'me@gmail.com',
+//       subject: 'Website contact form',
+//       text: req.body.message
+//   };
+//   smtpTrans.sendMail(mailOpts, function (error, response) {
+//       //Email not sent
+//       if (error) {
+//           res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' })
+//       }
+//       //Yay!! Email sent
+//       else {
+//           res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' })
+//       }
+//   });
+// });
 
 
 // ------- Error Handling ------------------------------------------

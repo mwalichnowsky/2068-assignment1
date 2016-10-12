@@ -1,8 +1,20 @@
-body {
-  padding: 50px;
-  font: 16px "Times New Romain", Times, Arial, serif;
+/* 
+    File name: about.js
+    Author: Matthew Walichnowsky
+    Website name: walichnowsky.com
+    File description: This page contains my logic elements for my about page.
+*/
+
+body 
+{
+	padding: 50px;
+	font: 16px "Times New Romain", Times, Arial, serif;
+	padding-bottom: 120px;
 }
 
-a {
+a 
+{
   color: #00B7FF;
 }
+
+

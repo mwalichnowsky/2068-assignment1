@@ -7,8 +7,33 @@
 
 <% include partials/header.ejs %>
 
-  <h1><%= title %></h1>
-  <p>Welcome to my Portfolio!</p>
-  <p><%= message%></p>
+<div class="col-lg-12 text-center"> 
+	<h3><%= title %></h3>
+	<p><%= message %></p>
+</div>
+<div class="col-md-2"></div>
+<div class="list-group col-md-8">
+	<a href="/about" class="list-group-item list-group-item-action active">
+		<h5 class="list-group-item-heading">About Me</h5>
+		<p class="list-group-item-text">I am not one for talking about myself, so instead maybe I will just state the facts and go from there.</p>
+	</a>
+	<a href="/services" class="list-group-item list-group-item-action">
+		<h5 class="list-group-item-heading">Services</h5>
+		<p class="list-group-item-text">What can I do for you? Well let's take a look at my services page which just scratches the surface.</p>
+	</a>
+	<a href="/projects" class="list-group-item list-group-item-action">
+		<h5 class="list-group-item-heading">Projects</h5>
+		<p class="list-group-item-text">What to see what I have worked on? Like this link to see some projects I have worked on.</p>
+	</a>
+	<a href="/experience" class="list-group-item list-group-item-action">
+		<h5 class="list-group-item-heading">Experience</h5>
+		<p class="list-group-item-text">Wondering what kind of background I have? Take a long at my resume which highlights some of my experience.</p>
+	</a>
+	<a href="/contact" class="list-group-item list-group-item-action">
+		<h5 class="list-group-item-heading">Contact</h5>
+		<p class="list-group-item-text">Let us get in touch!. We have much to talk about.</p>
+	</a>
+</div>
+<div class="col-md-2"></div>
 
 <% include partials/footer.ejs %>

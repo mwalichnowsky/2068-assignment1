@@ -14,7 +14,7 @@ router.get('/', function(req, res, next)
   res.render('index', 
   { 
     title: 'Matthew Walichnowsky',
-    message: 'This is my first node application.'   
+    message: 'This is my first node application. This will be my portfolio used professionally when 100% completed.'   
   });
 });
 

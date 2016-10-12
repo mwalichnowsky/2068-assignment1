@@ -9,8 +9,10 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-body {
+body 
+{
   margin: 0;
+  padding-bottom: 200px;
 }
 article,
 aside,

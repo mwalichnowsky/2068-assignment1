@@ -18,4 +18,6 @@ router.get('/', function(req, res, next)
   });
 });
 
+// transporter.sendMail(data[, callback])
+
 module.exports = router;
