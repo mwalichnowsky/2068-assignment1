@@ -1,3 +1,10 @@
+/* 
+    File name: contact.js
+    Author: Matthew Walichnowsky
+    Website name: walichnowsky.com
+    File description: This page contains my logic elements for my home page.
+*/
+
 var express = require('express');
 var router = express.Router();
 
@@ -5,11 +12,10 @@ var router = express.Router();
 router.get('/', function(req, res, next) 
 {
   res.render('index', 
-  {   
-    title: 'COMP2068 | Assignment 1', 
-    message:'This is the assignment 1 homepage' 
+  { 
+    title: 'Matthew Walichnowsky',
+    message: 'This is my first node application.'   
   });
 });
-
 
 module.exports = router;

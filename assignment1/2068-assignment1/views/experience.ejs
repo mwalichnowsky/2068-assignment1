@@ -1,0 +1,23 @@
+<!-- 
+    File name: experience.ejs
+    Author: Matthew Walichnowsky
+    Website name: walichnowsky.com
+    File description: This page contains my view elements for my experience page.
+-->
+
+<% include partials/header.ejs %>
+
+<div class="col-lg-12 text-center"> 
+	<h3><%= title %></h3>
+	<p><%= message %></p>
+</div>
+<div class="col-lg-2"></div>
+<div class="well col-lg-8">
+	<image class="well col-lg-12" src="./images/image001.jpg" />
+	<div style="font-size: 500%; font-family: "Times, serfif;" >
+		<% include Resume.htm %>
+	</div>
+</div>
+<div class="col-lg-2"></div>
+
+<% include partials/footer.ejs %>

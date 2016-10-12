@@ -1,0 +1,101 @@
+<!-- 
+    File name: about.ejs
+    Author: Matthew Walichnowsky
+    Website name: walichnowsky.com
+    File description: This page contains my view elements for my about page.
+-->
+
+<% include partials/header.ejs %>
+
+<div class="col-lg-12 text-center"> 
+	<h3><%= title %></h3>
+	<p><%= message %></p>
+</div>
+
+<div class="container">
+
+<div class="row">
+	<div class="col-md-12">
+		<h2 class="word-rotator-title">
+			The New Way to 
+			<strong>
+				<span class="word-rotate" data-plugin-options='{"delay": 2000}'>
+					<span class="word-rotate-items">
+						<span>success.</span>
+						<span>advancement.</span>
+						<span>progress.</span>
+					</span>
+				</span>
+			</strong>
+		</h2>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-10">
+		<p class="lead">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla non <span class="alternative-font">metus.</span> pulvinar. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut eu risus enim, ut pulvinar lectus. Sed hendrerit nibh.
+		</p>
+	</div>
+	<div class="col-md-2">
+		<a href="mailto:matt@tmgs.ca?Subject=WorkForce Box" class="btn btn-lg btn-primary mt-xl">Email Me!</a>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<hr class="tall">
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="heading-primary"><strong>Who</strong> I am</h3>
+		<p>
+			I am not one for talking about myself, so instead maybe I will state the facts. I am a student and a entrepreneur. I am on my way to becoming a official Computer Programmer. Last year, with help from the college, I had launched my business and was successful over the summer. I know spend all my time doing well in school and serving my clients. 
+		</p>
+		<p>
+			more text here
+		</p>
+	</div>
+	<div class="col-md-4">
+		<div class="featured-box featured-box-primary">
+			<div class="box-content">
+				<h4 class="text-uppercase">Activities I enjoy</h4>
+				<ul class="thumbnail-gallery" data-plugin-lightbox data-plugin-options='{"delegate": "a", "type": "image", "gallery": {"enabled": true}}'>
+					<li>
+						<p>
+							<strong>Camping</strong> | I enjoy going with my girlfriend and my dog camping. I generally go to McCrae Lake.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Computer Networks</strong> | I currently have my own server rack which I work on often, improving and expanding.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Arduino controlled Aquaponics</strong> | I loved building my <a href="http://arduinoponics.ca/">arduinoponics</a> system. My first protostype one "Crowd Favourite" at the Showcase 2015. I hope to gain more time to finish building our first prototype (subject to be moved to my office soon).
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Paintball</strong> | What can I say, it is a great game. I would go all the time if I could afford it. My favourite field is still <a href="http://www.wasagapaintball.com/">Wasaga Paintball</a> in Wasaga Beach.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Electrical</strong> | Every since I was 2, I was playing with VCR's and televisions. At 5, I was electricuted for the first time when I stuck my hand in a wall outlet. I have been getting electricuted ever since. I can now wire houses, complex circuits, vehicles and now even renewalable sources such as solar and wind power.
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Efficiency</strong> | I spend a great deal of effort making the things in my life more efficient. Fuel saving mods, optimal setups for work spaces, even file structure organization. Anything to improve time lost or money lost on a given task. 
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<% include partials/footer.ejs %>

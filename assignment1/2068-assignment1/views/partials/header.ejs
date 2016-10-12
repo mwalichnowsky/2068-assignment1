@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<!-- 
+    File name: header.ejs
+    Author: Matthew Walichnowsky
+    Website name: walichnowsky.com
+    File description: This page contains my view header elements.
+-->
+
+
+<head>
     <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css" />
-  </head>
-  <body>
-        <nav class="navbar navbar-default">
-            <ul>
-                <li><a href="/">Home</a><li>
-                <li><a href="/about">About</a><li>
-                <li><a href="/projects">Projects</a><li>
-                <li><a href="/services">Services</a><li>
-                <li><a href="/contact">Contact</a><li>
-            </ul>
-        </nav>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='./javascript/recapcha.js'></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li><a class="navbar-brand" href="/">Matthew Walichnowsky</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/experience">Experience</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
